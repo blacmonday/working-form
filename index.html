@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Design.css" />
+
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=outfit@100,200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <div class="contact__container">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="contact__left"
+      >
+        <div class="contact__left-title">
+          <h2>Get in touch</h2>
+          <hr />
+        </div>
+
+        <input
+          type="hidden"
+          name="access_key"
+          value="4ed359c2-d6ad-428c-837d-98c579a3b576"
+        />
+
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          class="contact__input"
+          required
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          class="contact__input"
+          required
+        />
+
+        <textarea
+          name="message"
+          placeholder="Your message"
+          class="contact__input"
+          required
+        ></textarea>
+
+        <button type="submit">
+          Submit <img src="assets/arrow_icon.png" alt="" />
+        </button>
+      </form>
+
+      <div class="contact__right">
+        <img src="assets/right_img.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
